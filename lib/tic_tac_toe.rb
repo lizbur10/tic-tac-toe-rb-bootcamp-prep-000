@@ -95,6 +95,7 @@ end
 def winner(board)
   if won?(board)
     puts "Congratulations #{board[won?(board)[0]]}!"
+    return board[won?(board)[0]]
   else
     puts "Cat's Game!"
   end
